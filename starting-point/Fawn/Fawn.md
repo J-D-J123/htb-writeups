@@ -31,4 +31,4 @@ SFTP
 ping
 ```
 
-![ping results](media/Ping.jpg)
+![ping results](media/Ping.JPG)
