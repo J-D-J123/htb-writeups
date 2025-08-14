@@ -32,3 +32,10 @@ ping
 ```
 
 ![ping results](media/Ping.JPG)
+
+5. From your scans, what version is FTP running on the target?
+```bash
+vsftpd 3.0.3
+```
+
+
