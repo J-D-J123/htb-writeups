@@ -15,7 +15,24 @@ printers and serial ports between endpoints on a network. Most common on Windows
 1. **Recon**
    - nmap -sV 10.129.150.178
    - Found open port 445 runing microsoft-ds
+   
 ![recon img](media/scan.JPG)
+
+2. **smbclient**
+   - used the -L as well as the -N command to list out all ways that do not require passwords
+   - Found that WorkShares allows a blank password
+  
+![smbclient img](media/smbclient.JPG)
+
+3. **smb**
+   - Figure out the smb commands to download the files on the system
+   - Has get so I will use get
+  
+![smbclient img2](media/help.JPG)
+
+Now to download the files using get filename
+
+![smbclient img3](media/smbdownload.JPG)
 
 ### Tasks
 
@@ -36,5 +53,22 @@ microsoft-ds
 
 4. What is the 'flag' or 'switch' that we can use with the smbclient utility to 'list' the available shares on Dancing?
 ```bash
- 
+ -L
 ```
+
+5. How many shares are there on Dancing?
+```bash
+4
+```
+
+6. What is the name of the share we are able to access in the end with a blank password?
+```bash
+WorkShares
+```
+
+7. What is the Command we can use within the SMB shell to download the files we find?
+```bash
+get
+```
+
+![completed](media/completed.JPG)
